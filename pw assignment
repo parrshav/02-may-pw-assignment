@@ -1,0 +1,71 @@
+Matplotlib
+Assignment Questions 
+Assignment 
+Q1: What is Matplotlib? Why is it used? Name five plots that can be plotted using the Pyplot module of  Matplotlib. 
+Matplotlib is a popular Python library used for creating static, interactive, and animated visualizations in a variety of formats. It is a powerful and flexible tool for data visualization and is widely used in the data science and scientific communities. Matplotlib allows users to generate various types of plots, ranging from simple line charts to complex 3D visualizations.
+Ease of Use
+Wide Range of Plot Types
+Customization
+Integration with NumPy
+1-Line Plot
+2-Scatter Plot
+3-Bar Plot
+4-Histogram
+Pie Chart
+
+
+
+Q2: What is a scatter plot? Use the following code to generate data for x and y. Using this generated data  plot a scatter plot. 
+import numpy as np 
+np.random.seed(3) 
+x = 3 + np.random.normal(0, 2, 50) 
+y = 3 + np.random.normal(0, 2, len(x)) 
+Note: Also add title, xlabel, and ylabel to the plot.  
+import matplotlib.pyplot as plt
+plt.scatter(x,y)
+plt.xlabel('this is my xaxis')
+plt.ylabel('this is my yaxis')
+A plot that shows individual data points as dots, useful for visualizing the relationship between two numerical variables.
+
+Q3: Why is the subplot() function used? Draw four line plots using the subplot() function. Use the following data: 
+import numpy as np 
+For line 1: x = np.array([0, 1, 2, 3, 4, 5]) and  y = np.array([0, 100, 200, 300, 400, 500]) For line 2:x = np.array([0, 1, 2, 3, 4, 5]) and  y = np.array([0, 100, 200, 300, 400, 500]) 
+For line 3: x = np.array([0, 1, 2, 3, 4, 5]) and y = np.array([10, 20, 30, 40, 50, 60]) 
+For line 4: x = np.array([0, 1, 2, 3, 4, 5]) and y = np.array([200, 350, 250, 550, 450, 150])  
+x1 = [0, 1, 2, 3, 4, 5]
+y1 = [0, 100, 200, 300, 400, 500]
+x2 = [0, 1, 2, 3, 4, 5]
+y2 = [0, 100, 200, 300, 400, 500]
+x3 = [0, 1, 2, 3, 4, 5] 
+y3 = [10, 20, 30, 40, 50, 60] 
+x4 = [0, 1, 2, 3, 4, 5]
+y4 = [200, 350, 250, 550, 450, 150]
+plt.subplot(2,2,1)
+plt.plot(x1,y1)
+plt.xlabel('this is my xaxis for line1')
+plt.title('this is my line 1')
+plt.subplot(2,2,2)
+plt.plot(x2,y2)
+plt.title('this is my line 2')
+plt.subplot(2,2,3)
+plt.plot(x3,y3)
+plt.title('this is my line 3')
+plt.subplot(2,2,4)
+plt.plot(x4,y4)
+plt.title('this is my line 4')
+
+Q4: What is a bar plot? Why is it used? Using the following data plot a bar plot and a horizontal bar plot.  import numpy as np 
+company = np.array(["Apple", "Microsoft", "Google", "AMD"]) 
+profit = np.array([3000, 8000, 1000, 10000])  
+Bar Plot: A chart that represents categorical data with rectangular bars, with the height of each bar indicating the value of the corresponding category.
+company = np.array(["Apple", "Microsoft", "Google", "AMD"]) 
+profit = np.array([3000, 8000, 1000, 10000])
+plt.bar(company,profit)
+
+
+Q5: What is a box plot? Why is it used? Using the following data plot a box plot. 
+A box plot, also known as a box-and-whisker plot, is a graphical representation of the distribution of a dataset along with its key statistical properties
+box1 = np.random.normal(100, 10, 200) 
+box2 = np.random.normal(90, 20, 200) 
+Note:  Create your assignment in Jupyter notebook and upload it in GitHub & share that github   repository link through your dashboard. Make sure the repository is public.
+Data Science Masters 
